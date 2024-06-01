@@ -26,22 +26,19 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .font(.system(size: 30))
                 Divider()
-                ZStack {
-                    Capsule()
-                        .frame(height: 50)
-                        .padding()
-                        .colorInvert()
-                    Text("Phone: +33753527872")
-                        .bold()
-                }
                 
+                InfoView(text: "+33 753 527 872", imageContact: "phone.fill")
+                      InfoView(text: "hamdi.tlili@yahoo.fr", imageContact: "envelope.fill")
+                    }
+               
             }
            
         }
        
     }
-}
 
 #Preview {
     ContentView()
 }
+
+
